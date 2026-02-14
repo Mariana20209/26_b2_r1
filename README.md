@@ -1,4 +1,5 @@
-# Proyecto - Sistema de Gestión de Estudiantes
+# Actividad 1 - API Gestión de Estudiantes
+**Nombre:** Mariana Suárez
 
 Este es un proyecto backend desarrollado con **Java 21** y **Spring Boot** para la gestión de estudiantes. Incluye una API RESTful que permite crear, leer, actualizar y eliminar (CRUD) registros de estudiantes, persistiendo los datos en una base de datos **PostgreSQL**.
 
@@ -19,6 +20,19 @@ Asegúrate de tener instalado lo siguiente en tu entorno local:
 - [Maven](https://maven.apache.org/download.cgi)
 - Cliente para probar la API (como [Postman](https://www.postman.com/) o [Insomnia](https://insomnia.rest/)).
 
+## 📸 Evidencia de la Instancia en Prisma
+
+![Instancia Prisma](img/prisma-instancia.png)
+
+---
+
+## 📸 Configuración de Conexión
+
+Connection string generada desde Prisma:
+
+![Configuración Prisma](img/prisma-config.png)
+
+
 ## ⚙️ Configuración
 
 La configuración de la base de datos se maneja a través de variables de entorno definidas en un archivo `.env` en la raíz del proyecto.
@@ -30,9 +44,10 @@ La configuración de la base de datos se maneja a través de variables de entorn
 
 2.  Edita el archivo `.env` y define tus credenciales:
     ```ini
-    DB_URL=jdbc:postgresql://localhost:5432/tu_base_de_datos
-    DB_USERNAME=tu_usuario
-    DB_PASSWORD=tu_contraseña
+    DB_URL=jdbc:postgresql://db.prisma.io:5432/postgres
+    DB_USERNAME=tu_usua
+    DB_PASSWORD=tu_contra
+
     ```
 
 > **Nota:** El archivo `.env` está excluido del control de versiones para mantener tus credenciales seguras.
@@ -41,7 +56,7 @@ La configuración de la base de datos se maneja a través de variables de entorn
 
 1.  **Clonar el repositorio**:
     ```powershell
-    git clone <url-del-repositorio>
+    git clone https://github.com/Mariana20209/26_b2_r1.git
     cd pi
     ```
 
@@ -67,16 +82,19 @@ La API base es `/api/students`. A continuación se detallan los endpoints dispon
 - **Método**: `GET`
 - **URL**: `/api/students`
 - **Respuesta**: Lista de estudiantes en formato JSON.
+![Metodo Get](img/get.png)
 
 ### 2. Obtener un estudiante por ID
 - **Método**: `GET`
 - **URL**: `/api/students/{id}`
 - **Ejemplo**: `/api/students/1`
+![Metodo Get por ID](img/Get_ID.png)
 
 ### 3. Obtener un estudiante por Email
 - **Método**: `GET`
 - **URL**: `/api/students/email/{email}`
 - **Ejemplo**: `/api/students/email/ejemplo@correo.com`
+![Metodo Get por email](img/Get_email.png)
 
 ### 4. Crear un nuevo estudiante
 - **Método**: `POST`
@@ -106,11 +124,13 @@ La API base es `/api/students`. A continuación se detallan los endpoints dispon
       "phone": "0987654321"
     }
     ```
+![Metodo Put](img/Put.png)
 
 ### 6. Eliminar un estudiante
 - **Método**: `DELETE`
 - **URL**: `/api/students/{id}`
 - **Ejemplo**: `/api/students/1`
+![Metodo Delete](img/Delete.png)
 
 ## 🧪 Ejecutar Pruebas
 
@@ -119,6 +139,9 @@ Para ejecutar las pruebas unitarias y de integración, usa el siguiente comando:
 ```powershell
 .\mvnw.cmd test
 ```
+## 📸 Evidencia de Conexión Exitosa
+
+![Log conexión](img/Conexión.png)
 
 ## 📂 Estructura del Proyecto
 
