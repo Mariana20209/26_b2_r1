@@ -111,7 +111,7 @@ La API base es `/api/students`. A continuación se detallan los endpoints dispon
 
     }
     ```
-![Metodo Put](img/Post.png)
+![Metodo Post](img/Post.png)
 
 ### 5. Actualizar un estudiante
 - **Método**: `PUT`
@@ -146,7 +146,7 @@ Para ejecutar las pruebas unitarias y de integración, usa el siguiente comando:
 
 ![Log conexión](img/Conexión.png)
 
-## 📸 Evidencia de Conexión mvn test
+## 📸 Evidencia de Pruebas Internas
 
 ![Log conexión](img/Maven.png)
 
