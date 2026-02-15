@@ -93,7 +93,7 @@ La API base es `/api/students`. A continuación se detallan los endpoints dispon
 ### 3. Obtener un estudiante por Email
 - **Método**: `GET`
 - **URL**: `/api/students/email/{email}`
-- **Ejemplo**: `/api/students/email/ejemplo@correo.com`
+- **Ejemplo**: `/api/students/email/ruben.echeverri@correo.com`
 ![Metodo Get por email](img/Get_email.png)
 
 ### 4. Crear un nuevo estudiante
@@ -102,13 +102,16 @@ La API base es `/api/students`. A continuación se detallan los endpoints dispon
 - **Body (JSON)**:
     ```json
     {
-      "firstName": "Juan",
-      "lastName": "Pérez",
-      "email": "juan.perez@example.com",
-      "birthDate": "2000-01-15",
-      "phone": "1234567890"
+  
+    "firstName": "Ana",
+    "lastName": "Vasquez",
+    "email": "ana.vasquez@correo.com",
+    "birthDate": "1969-04-02",
+    "phone": 6556115653
+
     }
     ```
+![Metodo Put](img/Post.png)
 
 ### 5. Actualizar un estudiante
 - **Método**: `PUT`
@@ -117,11 +120,11 @@ La API base es `/api/students`. A continuación se detallan los endpoints dispon
 - **Body (JSON)**:
     ```json
     {
-      "firstName": "Juan Carlos",
-      "lastName": "Pérez",
-      "email": "juan.perez@example.com",
-      "birthDate": "2000-01-15",
-      "phone": "0987654321"
+      "firstName": "Ruben",
+      "lastName": "Echeverri",
+      "email": "ruben.echeverri@correo.com",
+      "birthDate": "1960-07-08",
+      "phone": "9874663225"
     }
     ```
 ![Metodo Put](img/Put.png)
@@ -129,7 +132,7 @@ La API base es `/api/students`. A continuación se detallan los endpoints dispon
 ### 6. Eliminar un estudiante
 - **Método**: `DELETE`
 - **URL**: `/api/students/{id}`
-- **Ejemplo**: `/api/students/1`
+- **Ejemplo**: `/api/students/2`
 ![Metodo Delete](img/Delete.png)
 
 ## 🧪 Ejecutar Pruebas
@@ -142,6 +145,14 @@ Para ejecutar las pruebas unitarias y de integración, usa el siguiente comando:
 ## 📸 Evidencia de Conexión Exitosa
 
 ![Log conexión](img/Conexión.png)
+
+## 📸 Evidencia de Conexión mvn test
+
+![Log conexión](img/Maven.png)
+
+## 📸 Evidencia de logo de Spring
+
+![Log conexión](img/Logo_spring.png)
 
 ## 📂 Estructura del Proyecto
 
